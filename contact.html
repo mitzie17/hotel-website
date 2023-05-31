@@ -8,17 +8,40 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
   </head>
   <body class="bg-light">
+  
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="amenities.html">Services & Amenities</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
 	<h1 class="text-primary p-3">Contact Us</h1>
 
-    <div class="container" style="background-image: url(contact.jpeg); height: 100vh">
+    <div class="bg-image container mb-5" style="background-image: url(contact.jpeg); background-size: cover; height: 100vh; width: 100%">
         <form>
-            <div class="form-group text-center p-3">
+            <div class="row d-flex justify-content-center p-3">
                 <input class="form-control form-control-lg m-3 border-primary" type="text" placeholder="Name">
                 <input class="form-control form-control-lg m-3 border-primary" type="email" placeholder="name@example.com">
-                <textarea class="form-control form-control-lg m-3 border-primary" id="exampleFormControlTextarea1" rows="3" placeholder="Comments"></textarea>
-                <button type="submit" class="btn btn-outline-primary btn-lg btn-block">Submit</button>
+                <textarea class="form-control form-control-lg m-3 border-primary" id="exampleFormControlTextarea1" rows="3" placeholder="Comments/questions..."></textarea>
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
             </div>
-            
+    
         </form>
     </div>
 
